@@ -197,7 +197,7 @@ header{
 
 header .logo {
 	float:left;
-	margin:30px 0 0;
+	margin:20px 0 0;
 }
 
 /* --- menu --- */
@@ -316,7 +316,7 @@ nav select {
 
 
 section#intro {
-	background: #000 url(../img/bg/bg-1.jpg) 50% 0 no-repeat;
+	background:#000 url(../img/bg/kenny-luo-1179155-unsplash.jpg) 50% 0 no-repeat;
 	position:relative;
 	width:100%;
 	height:auto;
@@ -351,10 +351,13 @@ section#intro i  {
 	text-align:center;
 }
 
-section#intro h1  {
+section#intro  h1 {
 	color:#fff;
-	font-size:64px;
+	font-size:50px;
 	font-weight:700;
+}
+@media only screen and (max-width: 600px){
+	section#intro  h1{ font-size: 30px;}
 }
 section#intro h2  {
 	color:#ddd;
@@ -407,7 +410,6 @@ ul.social-profile li {
 ul.social-profile li a:hover {
 	text-decoration:none;
 }
-
 
 /* =======================================
 3. Section: Services
@@ -741,7 +743,7 @@ ul.the-icons {
 
 /* ================= services ============================ */
 section#services {
-	background: url(../img/bg/bg-1.jpg) 50% 0 no-repeat;
+	background: #000 url(../img/bg/kenny-luo-1179155-unsplash.jpg) 50% 0 no-repeat;
 	width:100%;
 	height:auto;
 	margin:0;
@@ -1059,7 +1061,7 @@ section#bottom {
 footer{
 	float:left;
 	width:100%;
-	background:#212121;
+	background:#000 url(../img/bg/kenny-luo-1179155-unsplash.jpg);
 	color:#fff;
 	margin:0;
 	padding:40px 0 0 0;
@@ -1310,9 +1312,9 @@ img.pull-left{
 
     nav select {
       display: inline-block;
-	  width:85%;
+	  width:35%;
 	  float:none;
-	  margin:20px;
+	  margin:0px 0 0 80px;
 	  color:#111;
 	  line-height:30px;
   -webkit-border-radius: 4px;
