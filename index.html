@@ -38,16 +38,16 @@
 		animation-direction: alternate;
 		color:blueviolet;
 	}
-	@keyframes blink
-	{
-		from{
-			opacity: 5;
-		}
-		to{
-			opacity: 0;
-		}
-	}
-	
+ @keyframes blink
+ {
+   from{opacity:1.0;}
+   to{opacity:0.0;}
+ }
+ #w
+ {
+   position:relative;
+   top:10px;
+ }
 	
 	</style>
  
@@ -65,7 +65,7 @@
           <div class="navigation">
          <nav>
               <ul class="nav pull-right">
-                <li class="current"><a href="#intro"><i class="icon-home"></i>Home</a></li>
+                <li class="current"><a href="#intro"><i class="icon-home"></i></a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Events</a></li>
                 <li><a href="#works">Projects</a></li>
@@ -93,8 +93,10 @@
   <!-- section intro -->
   <section id="intro">
     <div class="slogan">
-      
-      <h1 style="font-family: 'alex-brush'" >Welcome to Electronics Society<span> Aavesh </span> </h1>
+      <div class="icon">
+       <a href="index.html"> <img src="assets/img/logo.png"  width="27pox"> </a>
+      </div>
+      <h1 style="font-family: 'alex-brush'">Welcome to Electronics Society<span> Aavesh </span> </h1>
       <h2>Creating ideas with technology and imagination</h2>
     </div>
   </section>
@@ -116,7 +118,7 @@
           </div>
           <div class="sub-heading">
             <p>
-		    <strong>Aavesh</strong> is an electronics society that strives to teach and help students acquire new skills in an era of rapidly evolving technology in the field of electronics and communication engineering. The Society aims to provide potential minds of IIITU  a platform to discuss innovative ideas and nurture their skills to tackle real life challenges in the world today and contribute to the technical society through various projects, patents and research publications. We will be organizing various expert lectures, workshops, mentorship programs as well as competitions throughout the year to keep the students learning and providing them the necessary resources to implement their ideas. Activities of this club are published in the Current event section in every semester.
+		    <strong>Aavesh</strong> is an <strong>electronics</strong> society that strives to teach and help students acquire new skills in an era of rapidly evolving technology in the field of electronics and communication engineering. The Society aims to provide potential minds of IIITU  a platform to discuss innovative ideas and nurture their skills to tackle real life challenges in the world today and contribute to the technical society through various projects, patents and research publications. We will be organizing various expert lectures, workshops, mentorship programs as well as competitions throughout the year to keep the students learning and providing them the necessary resources to implement their ideas. Activities of this club are published in the Current event section in every semester.
             </p>
           </div>
         </div>
@@ -145,7 +147,7 @@
             </p>
             <ul class="social-profile">
               <li><a href="#"><i class="icon-facebook icon-32 icon-circled"></i></a></li>
-             
+              <li><a href="#"><i class="icon-twitter icon-32 icon-circled"></i></a></li>
               <li><a href="#"><i class="icon-linkedin icon-32 icon-circled"></i></a></li>
             </ul>
           </div>
@@ -159,8 +161,8 @@
             </p>
             <ul class="social-profile">
               <li><a href="https://www.facebook.com/nancy.vatsal"><i class="icon-facebook icon-32 icon-circled"></i></a></li>
-            
-              <li><a href="https://www.linkedin.com/in/nancy-chauhan-5a309b15b/"><i class="icon-linkedin icon-32 icon-circled"></i></a></li>
+              <li><a href="#"><i class="icon-twitter icon-32 icon-circled"></i></a></li>
+              <li><a href="#"><i class="icon-linkedin icon-32 icon-circled"></i></a></li>
             </ul>
           </div>
         </div>
@@ -172,9 +174,9 @@
               Vice President
             </p>
             <ul class="social-profile">
-              <li><a href="https://www.facebook.com/saurabhyadav789"><i class="icon-facebook icon-32 icon-circled"></i></a></li>
-             
-              <li><a href="https://www.linkedin.com/in/saurabhyadav789/"><i class="icon-linkedin icon-32 icon-circled"></i></a></li>
+              <li><a href="#"><i class="icon-facebook icon-32 icon-circled"></i></a></li>
+              <li><a href="#"><i class="icon-twitter icon-32 icon-circled"></i></a></li>
+              <li><a href="#"><i class="icon-linkedin icon-32 icon-circled"></i></a></li>
             </ul>
           </div>
         </div>
@@ -208,10 +210,12 @@
           Workshop on <strong>Machine learning </strong> and <strong>opencv</strong>
             </p>
            <P class="blinking">
+             <strong>
               16/03/2019    9:00am-4:00pm
               17/03/2019    9:00am-6:00pm
+            </strong>
             </P>
-            <a href="#" class="btn btn-theme">Join</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJ3QcU3-4on9FhqN7KWkJCouVNRuZ2NReHDH11drbz2i0ruw/viewform?usp=sf_link" class="btn btn-theme">Join</a>
           </div>
         </div>
         <div class="span3">
@@ -229,19 +233,20 @@
             <a href="#" class="btn btn-theme">Know more</a>
           </div>
         </div>
-        <div class="span3">
-          <div class="box aligncenter">
+        <div class="span3" >
+          <div class="box aligncenter" style="height:340px">
             <div class="halftop">
-              <h4><strong>Technical Fest</strong></h4>
+              <h4><strong>Meraki</strong></h4>
+              <h1 style="font-size:20px">Techanical Fest</h1>
               <img src="techfest.jpg" style="border-radious:50%;width:100px;height:93px"   >
             </div>
             <p>
-              This year IIIT Una is going to oragnise the technical fest, Show your participation...
+              This year IIIT Una is going to oragnise the technical fest MERAKI, Show your participation...
               <br>
-              <br>
-              <br>
+              
+          
             </p>
-            <a href="#" class="btn btn-theme">Know more</a>
+            <a href="#" class="btn btn-theme" id="w">Know more</a>
           </div>
         </div>
         <div class="span3">
@@ -291,7 +296,7 @@
           <div class="row">
             <ul class="portfolio-area da-thumbs">
               <li class="portfolio-item" data-id="id-0" data-type="iot">
-                <div class="span4">
+                <div class="span3">
                   <div class="thumbnail">
                     <div class="image-wrapp">
                       <img src="iot.jpg" alt="Portfolio name" title="" />
@@ -316,7 +321,7 @@
                 </div>
               </li>
               <li class="portfolio-item" data-id="id-0" data-type="hardware">
-                <div class="span4">
+                <div class="span3">
                   <div class="thumbnail">
                     <div class="image-wrapp">
                       <img src="food.jpg" alt="Portfolio name" title="" />
@@ -324,7 +329,7 @@
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <h5><strong>Food vending Machine</strong></h5>
 	        	<a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Food-Vending-Machine"><i class="icon-rounded icon-48 icon-github"></i></a>
-                        <a href="jquery_selector2.html"><i class="icon-rounded icon-48 icon-plus-sign"></i></a>
+                      
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/bigfood.jpg">
 								<i class="icon-rounded icon-48 icon-zoom-in"></i>
                 </a></span>
@@ -335,7 +340,7 @@
                 </div>
               </li>
               <li class="portfolio-item" data-id="id-0" data-type="software">
-                <div class="span4">
+                <div class="span3">
                   <div class="thumbnail">
                     <div class="image-wrapp">
                       <img src="image.jpg" alt="Portfolio name" title="" />
@@ -354,7 +359,7 @@
                 </div>
               </li>
               <li class="portfolio-item" data-id="id-0" data-type="hardware">
-                <div class="span4">
+                <div class="span3">
                   <div class="thumbnail">
                     <div class="image-wrapp">
                       <img src="aircraft.jpg" alt="Portfolio name" title="" />
@@ -362,7 +367,7 @@
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <h5><strong>RC Aircraft</strong></h5>
 	       		<a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/RC-Aircraft"><i class="icon-rounded icon-48 icon-github"></i></a>
-                        <a href="#"><i class="icon-rounded icon-48 icon-link"></i></a>
+                     
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/airbig.jpg">
 								<i class="icon-rounded icon-48 icon-zoom-in"></i>
                 </a></span>
@@ -373,7 +378,7 @@
                 </div>
               </li>
               <li class="portfolio-item" data-id="id-0" data-type="hardware">
-                <div class="span4">
+                <div class="span3">
                   <div class="thumbnail">
                     <div class="image-wrapp">
                       <img src="mp3.jpg" alt="Portfolio name" title="" />
@@ -381,7 +386,7 @@
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <h5><strong>MP3 PLAYER</strong></h5>
 	       		<a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/AVR-16Bit-WAV-Player"><i class="icon-rounded icon-48 icon-github"></i></a>
-                        <a href="#"><i class="icon-rounded icon-48 icon-link"></i></a>
+                      
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/mp3big.jpg">
 								<i class="icon-rounded icon-48 icon-zoom-in"></i>
                 </a></span>
@@ -392,14 +397,14 @@
                 </div>
               </li>
               <li class="portfolio-item" data-id="id-0" data-type="iot">
-                <div class="span4">
+                <div class="span3">
                   <div class="thumbnail">
                     <div class="image-wrapp">
                       <img src="plant.jpg" alt="Portfolio name" title="" />
 			    <div class="bottom-left"><strong>Irrigation System</strong></div>
                       <article class="da-animate da-slideFromRight" style="display: block;">
                         <h5><strong>Irrigation System</strong></h5>
-                        <a href="#"><i class="icon-rounded icon-48 icon-link"></i></a>
+                        <a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Automation-Irrigation-System"><i class=" icon-48 icon-rounded icon-github"></i></a>
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/plantbig.jpg">
 								<i class="icon-rounded icon-48 icon-zoom-in"></i>
                 </a></span>
@@ -410,15 +415,15 @@
                 </div>
               </li>
 	        <li class="portfolio-item" data-id="id-0" data-type="software">
-                <div class="span4">
+                <div class="span3">
                   <div class="thumbnail">
                     <div class="image-wrapp">
                       <img src="Gesture.jpg" alt="Portfolio name" title="" />
 			    <div class="bottom-left"><strong>Cursor Movement by Hand Gestures</strong></div>
                       <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5><strong>MP3 PLAYER</strong></h5>
+                        <h5><strong>Cursor Movement by Hand Gestures</strong></h5>
 	       		<a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/AVR-16Bit-WAV-Player"><i class="icon-rounded icon-48 icon-github"></i></a>
-                        <a href="#"><i class="icon-rounded icon-48 icon-link"></i></a>
+                      
                         <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/mp3big.jpg">
 								<i class="icon-rounded icon-48 icon-zoom-in"></i>
                 </a></span>

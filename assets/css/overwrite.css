@@ -90,13 +90,12 @@ a:hover {
   background-color: #eee;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 50%;
-     -moz-border-radius: 50%;
-          border-radius: 50%;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
 }
 
-.img-circle 
-{
+.img-circle {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
