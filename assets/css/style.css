@@ -231,7 +231,7 @@ header .logo {
 .navbar .nav > li > a:hover {
   text-decoration: none;
   color:#fff;
-  background-color: transparent;
+  background-color:transparent;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
@@ -254,10 +254,13 @@ header .logo {
 }
 
 .navbar .nav li.dropdown > a:hover .caret {
+	
   text-shadow: none;
 }
 
 .navbar .nav li.dropdown a {
+	
+	
 	margin-top:-2px;
 }
 
@@ -1315,6 +1318,8 @@ img.pull-left{
 		background: #0C0101 url(../img/icons8-circled-menu-48.png) ;
 	  width:10%;
 	  float:none;
+		font-family: "french-canon";
+		font-size: 20px;
 	  margin:0px 0 0 30%;
 	  color:white;
 		
