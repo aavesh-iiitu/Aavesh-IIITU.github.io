@@ -42,13 +42,13 @@ jQuery(document).ready(function($) {
   });
 
   // Create the dropdown base
-  $("<select />").appendTo("nav");
+$("<select />").appendTo("nav");
 
   // Create default option "Go to..."
   $("<option />", {
     "selected": "selected",
     "value": "",
-    "text": "go to"
+    "text": ""
   }).appendTo("nav select");
 
   // Populate dropdown with menu items

@@ -1273,7 +1273,7 @@ img.pull-left{
     nav select {
       display: block;
 	  width:50%;
-	  float:right;
+	  float: right;
 	  margin-bottom:20px;
 	  color:#111;
 	  margin-top:20px;
@@ -1307,20 +1307,20 @@ img.pull-left{
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
 
 
     nav select {
       display: inline-block;
-	  width:35%;
+		background: #0C0101 url(../img/icons8-circled-menu-48.png) ;
+	  width:10%;
 	  float:none;
-	  margin:0px 0 0 80px;
-	  color:#111;
-	  line-height:30px;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-		font-size:14px;
+	  margin:0px 0 0 30%;
+	  color:white;
+		
+		background-color:black;
+	  line-height:20px;
+  
 	}
 
 	section#intro{
