@@ -1314,7 +1314,11 @@ img.pull-left{
       display: inline-block;
 		background: #0C0101 url(../img/icons8-circled-menu-48.png) ;
 	  width:10%;
+		font-family: "french-canon";
+		font-size: 20px;
 	  float:none;
+		border: #26A2E1;
+		
 	  margin:0px 0 0 30%;
 	  color:white;
 		
