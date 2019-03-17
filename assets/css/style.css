@@ -319,7 +319,7 @@ nav select {
 
 
 section#intro {
-	background:#77C9E8 url(../img/bg/bg2.jpg) 50% 0 no-repeat;
+	background:#000000 url(../img/bg/bg2.jpg) 50% 0 no-repeat;
 	position:relative;
 	width:100%;
 	height:auto;
@@ -746,7 +746,7 @@ ul.the-icons {
 
 /* ================= services ============================ */
 section#services {
-	background: #000 url(../img/bg/kenny-luo-1179155-unsplash.jpg) 50% 0 no-repeat;
+	background: #000 url(../img/bg/vladimir-malyutin-1409746-unsplash.jpg) 50% 0 no-repeat;
 	width:100%;
 	height:auto;
 	margin:0;
@@ -1064,7 +1064,7 @@ section#bottom {
 footer{
 	float:left;
 	width:100%;
-	background:#000 url(../img/bg/kenny-luo-1179155-unsplash.jpg);
+	background:#000 url(../img/bg/vladimir-malyutin-1409746-unsplash.jpg);
 	color:#fff;
 	margin:0;
 	padding:40px 0 0 0;
