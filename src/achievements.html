@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Achievements</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./Style.css" />
+  <link rel="stylesheet" href="./mobile-style.css">
+    <style type="text/css">
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header1 a {
+  font-family: var(--Sniglet-font);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.active .nav-link
+        {
+            background-color: blue;
+        }
+
+
+.header1 .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+.header1 .nav-item {
+  padding: 0.9em;
+}
+
+.header1 .navbar-brand {
+  padding-left: 8rem;
+}
+
+.header1 .nav-link:hover {
+  color: red;
+}
+
+.header1 .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+}
+
+.header1 .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+.header1 .row .col-md-5 img {
+  width: 90%;
+}
+
+
+.header1 .container .col-md-7 {
+  font-family: "Rubik", sans-serif;
+}
+
+.header1 .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+.header1 .container .col-md-7 h1 {
+  font-size: 8.5vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+.header1 .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+.header1
+        {
+            height: 100vh;
+        }
+        .heading
+        {
+            color: black;
+            text-decoration-color: black;
+            
+        }
+        .heading1
+        {
+            color: black;
+            letter-spacing: 3px;
+        }
+ .image-background
+        {
+            position: absolute;
+            z-index: -1;
+            min-height: 100%;
+            min-width: 100%;
+            width: auto;
+            height: auto;
+            right: 0;
+            bottom: 0;
+            
+        }
+        
+        @media (max-aspect-ratio: 16/9)
+        {
+            .image-background
+            {
+                width: auto;
+                height: 100%;
+            }
+        }
+        
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+  .fa 
+        {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            padding-top: 8px;
+            font-size: 25px;
+            width: 45px;
+            height: 40px;
+            text-align: center;
+            text-decoration: none;
+            
+        }
+
+        .fa:hover 
+        {
+            opacity: 0.5;
+        }
+        .fa-linkedin 
+        {
+            background: #007bb5;
+            color: white;
+        }
+        .fa-facebook 
+        {
+            background: #3B5998;
+            color: white;
+        }
+        .fa-briefcase 
+        {
+            background: #a4c639;
+            color: white;
+        }
+        .fa-twitter 
+        {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-instagram 
+        {
+            background: #125688;
+            color: white;
+        }
+        .fa-github
+        {
+            background: black;
+            color: white;
+        }
+        .span3
+        {
+            padding: 10px;
+            margin: 10px;
+        }
+        .row
+        {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<section class="header1">
+    <img class="image-background img-fluid" src="assets/bg/bg2Edited.jpg" style="min-width: 100%">
+      
+    <div class="container-fluid p-0" style="background-color: black">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.png" width="60px" height="45px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">HACKATRONICS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="dropdown">
+                  <div class="active">
+                <a href="#" class="nav-link">Our Team <i class="fas fa-angle-down"></i></a>
+                </div><div class="dropdown-content">
+                  <a href="#">Members</a>
+                  <a href="#">Achievements</a>
+                  <a href="#">Blogs</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </section>
+<section class="members" id="members" style="margin-top: 20px; margin-bottom: 20px; margin-right: 5px">
+  <div class="container-fluid" style="padding-top: 30px; ">
+    
+      <div class="span12" style="padding: 10px">
+            <div class="heading" style="font-family: Rubik">
+                <center><h1 style="text-decoration: underline; text-decoration-style: double; font-size: 40px; "><STRONG>ACHIEVEMENTS</STRONG></h1>
+                    <br>
+                </center>
+            </div>
+          </div>
+<div class="container-fluid" style=" max-height: auto; max-width: 100%">        
+  <table class="table" style="max-width: 100%; max-height: auto">
+    <thead>
+      <tr>
+        <th>Student</th>
+        <th>Competition</th>
+        <th>Details</th>
+	 <th>Achievement</th>     
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Utkarsh Tiwari</td>
+        <td>IARC (Techkriti IITK)</td>
+        <td>Line follower, Maze solver, Wall follower, Node detection and distance measurement with a single bot.</td>
+	<td>Qualified for finals with international teams</td>
+      </tr>
+	    <tr>
+        <td>Yash Saxena</td>
+        <td>IARC (Techkriti IITK)</td>
+        <td>Line follower, Maze solver, Wall follower, Node detection and distance measurement with a single bot.</td>
+	<td>Participated in first round.</td>
+      </tr>
+	    <tr>
+        <td>Chandan Sitlani</td>
+        <td>IARC (Techkriti IITK)</td>
+        <td>Line follower, Maze solver, Wall follower, Node detection and distance measurement with a single bot.</td>
+	<td>Participated in first round.</td>
+      </tr>
+      <tr>
+        <td>Roshan</td>
+        <td>Multirotor (IITK)`</td>
+        <td>A Quadcopter</td>
+	<td>Participated</td>
+	</tr>
+      <tr>
+        <td>Jitaksh Kapoor</td>
+        <td>Operation Rahat (Techfest’18-IITB)<br>
+            Manouevre Techkriti (IITK)</td>
+        <td>Multipurpose Drone (with camera and payload carrying mechanism) making competition<br>
+            Gripper robot.</td>
+        <td>Cleared stage 1 and qualified for final round of Manouevre<br>
+            Qualified for stage 2. Stood 9th overall among  91 teams.</td>
+      </tr>
+      <tr>
+        <td>Apurv</td>
+        <td>Manouevre Techkriti (IITK)</td>
+        <td>Gripper robot.</td>
+        <td>Cleared stage 1 and qualified for final round of Manouevre </td>
+      </tr>
+      <tr>
+        <td>Anjali Srivastava</td>
+        <td>IARC Techkriti (IITK)</td>
+        <td>Line follower, Maze solver,Wall follower,Node detection and distance measurement with a single bot.</td>
+        <td>Participated in first round.</td>
+      </tr>
+        <tr>
+        <td>Aaryan Gupta</td>
+        <td>Manouevre Techkriti (IITK)</td>
+        <td>Gripper robot.</td>
+        <td>Cleared stage 1 and qualified for final round of Manouevre </td>
+      </tr>
+	<tr>
+        <td>Swarnima Tiwari</td>
+        <td>IARC Techkriti (IITK)</td>
+        <td>Line follower, Maze solver,Wall follower,Node detection and distance measurement with a single bot.</td>
+        <td>Participated in first round. </td>
+      </tr>
+	 <tr>
+        <td>Kashish Arora</td>
+        <td>IARC Techkriti (IITK)</td>
+        <td>Line follower, Maze solver,Wall follower,Node detection and distance measurement with a single bot.</td>
+        <td>Participated in first round. </td>
+      </tr>
+       <tr>
+        <td>Piyush Bhatia</td>
+        <td>IARC Techkriti (IITK)</td>
+        <td>Line follower, Maze solver,Wall follower,Node detection and distance measurement with a single bot.</td>
+        <td>Participated in first round. </td>
+      </tr>   
+	    <tr>
+        <td>Dhruv Mittal</td>
+        <td>IARC Techkriti (IITK)</td>
+        <td>Line follower, Maze solver,Wall follower,Node detection and distance measurement with a single bot.</td>
+        <td>Participated in first round. </td>
+      </tr>  
+	 
+    </tbody>
+  </table>
+</div>
+  </div>
+</section>
+     <section class="section5" id="contact" style="margin: 10px; padding: 10px">
+        <div class="container-fluid" style="margin-top: 30px">
+        <div class="row" style="padding: 20px; min-width: 100%">
+            <div class="span12 heading1" style="font-family: Rubik">
+                <center>
+                <h1 style="text-decoration: underline; text-decoration-style: double; font-size: 40px; ">GET IN TOUCH</h1>                
+                </center>
+                <br>
+                <center>
+                <p style="font-family: Bahnschrift SemiLight SemiConde; font-size: 18px">
+                    Feel free to ask if you have any question regarding workshop and events or if you just want to say Hello, we would love to hear from you.
+                </p>
+                </center>
+            </div>
+          </div>
+        <div class="row" style="padding: 20px; min-width: 100%">
+           <div class="span6" style="width: 50%">
+                <p>
+                    <strong>Mr. Sumit Kumar</strong>
+                </p>
+                <p>
+                    Assistant Professor at IIIT Una & Faculty Coordinator
+                </p>
+                <p>
+                    <span><i class="fas fa-phone"></i><strong> Phone:</strong> +91-9798141114</span>
+                </p>
+          
+          
+                <p>
+                    <span><i class="fas fa-envelope"></i><strong> Email:</strong> sumitphd13@gmail.com </span>
+                </p>
+           </div> 
+            <div class="span6" style="width: 50%">
+                <p>
+                    <strong>Aman Saxena</strong>
+                </p>
+                <p>
+                    President
+                </p>
+                <p>
+                    <span><i class="fas fa-phone"></i><strong> Phone:</strong> +91-8894973403  </span>
+                </p>
+          
+          
+                <p>
+                    <span><i class="fas fa-envelope"></i><strong> Email:</strong> 16209@iiitu.ac.in</span>
+                </p>
+           </div> 
+            
+        </div>
+        <div class="row" style="padding: 20px; min-width: 100%">
+            <div class="span12 heading1" style="min-width: 100%">
+                <center>
+                <h4 style="font-size: 28px; font-family: Times New Roman; text-align: center"><i class="fas fa-users"></i><strong> Connect to our Social Profiles</strong></h4>                
+                </center>
+                <br>
+                <center>
+                <p>
+                    <a href="https://www.instagram.com/teamaavesh/" class="fa fa-instagram"></a>
+                    <a href="https://m.facebook.com/TeamAAVESH/?ref=bookmarks" class="fa fa-facebook"></a>
+                    <a href="https://www.linkedin.com/company/aavesh-iiitu/?originalSubdomain=in" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/Aavesh-IIITU" class="fa fa-github"></a>
+                </p>
+                </center>
+            </div>
+        </div>
+        </div>
+    </section>
+  <section class="footer">
+    <div class="container-fluid" style="margin-top: 30px; min-width: 100%; background-image: url(assets/kenny-luo-1179155-unsplash.jpg); background-attachment: fixed; background-size: contain; margin-bottom: 0px">
+        <div class="row" style="padding-top: 30px; margin-bottom: 0px">
+          <div class="span12" style="min-width: 100%; color: white; font-size: 16px">
+              <center>
+                <a class="brand" href="index.html"><img src="assets/bg/logo.png" alt="" height="100px"  width="140" /></a>
+                  <br>
+                  <br>
+                <p>
+                    &copy; Aavesh - All right reserved
+                    <br>
+                    Created by <a href="index.html">Electronic Society@IIIT Una</a>
+                </p>
+              </center>
+            </div>
+           
+          </div>
+      
+    </div>
+  </section>
+</body>
