@@ -857,7 +857,18 @@ ul.filter li.active a{
 }
 
 
-
+.span3 img:hover{
+	transform: scale(1.1);
+	transition: 0.8s all ease;
+}
+.span4 img:hover{
+	transform: scale(1.05);
+	transition: 0.8s all ease;
+}
+.span6 img:hover{
+	transform: scale(1.05);
+	transition: 0.8s all ease;
+}
 
 /* Portolio Hover */
 
