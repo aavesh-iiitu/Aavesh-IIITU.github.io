@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Members</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./Style.css" />
+  <link rel="stylesheet" href="./mobile-style.css">
+    <style type="text/css">
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header1 a {
+  font-family: var(--Sniglet-font);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.active .nav-link
+        {
+            background-color: blue;
+        }
+
+
+.header1 .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+.header1 .nav-item {
+  padding: 0.9em;
+}
+
+.header1 .navbar-brand {
+  padding-left: 8rem;
+}
+
+.header1 .nav-link:hover {
+  color: red;
+}
+
+.header1 .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+}
+
+.header1 .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+.header1 .row .col-md-5 img {
+  width: 90%;
+}
+
+
+.header1 .container .col-md-7 {
+  font-family: "Rubik", sans-serif;
+}
+
+.header1 .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+.header1 .container .col-md-7 h1 {
+  font-size: 8.5vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+.header1 .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+.header1
+        {
+            height: 100vh;
+        }
+        .heading
+        {
+            color: black;
+            text-decoration-color: black;
+            
+        }
+        .heading1
+        {
+            color: black;
+            letter-spacing: 3px;
+        }
+ .image-background
+        {
+            position: absolute;
+            z-index: -1;
+            min-height: 100%;
+            min-width: 100%;
+            width: auto;
+            height: auto;
+            right: 0;
+            bottom: 0;
+            
+        }
+        
+        @media (max-aspect-ratio: 16/9)
+        {
+            .image-background
+            {
+                width: auto;
+                height: 100%;
+            }
+        }
+        
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+  .fa 
+        {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            padding-top: 8px;
+            font-size: 25px;
+            width: 45px;
+            height: 40px;
+            text-align: center;
+            text-decoration: none;
+            
+        }
+
+        .fa:hover 
+        {
+            opacity: 0.5;
+        }
+        .fa-linkedin 
+        {
+            background: #007bb5;
+            color: white;
+        }
+        .fa-facebook 
+        {
+            background: #3B5998;
+            color: white;
+        }
+        .fa-briefcase 
+        {
+            background: #a4c639;
+            color: white;
+        }
+        .fa-twitter 
+        {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-instagram 
+        {
+            background: #125688;
+            color: white;
+        }
+        .fa-github
+        {
+            background: black;
+            color: white;
+        }
+        .span3
+        {
+            padding: 10px;
+            margin: 10px;
+        }
+        .row
+        {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<section class="header1">
+    <img class="image-background img-fluid" src="assets/bg/bg2Edited.jpg" style="min-width: 100%">
+      
+    <div class="container-fluid p-0" style="background-color: black">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.png" width="60px" height="45px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">HACKATRONICS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="dropdown">
+                  <div class="active">
+                <a href="#" class="nav-link">Our Team <i class="fas fa-angle-down"></i></a>
+                </div><div class="dropdown-content">
+                  <a href="#">Members</a>
+                  <a href="#">Achievements</a>
+                  <a href="#">Blogs</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </section>
+<section class="members" id="members" style="margin: 20px;">
+  <div class="container-fluid" style="padding: 30px">
+    <div class="span12" style="padding: 10px">
+            <div class="heading" style="font-family: Rubik">
+                <center><h1 style="text-decoration: underline; text-decoration-style: double; font-size: 48px; "><STRONG>COORDINATORS</STRONG></h1>
+                    <br>
+                <p style="font-family: Bahnschrift SemiLight SemiConde; font-size: 22px">We have a history of doing what our name implies, creating a visual language around the beliefs of the brands we work with.</p>
+                </center>
+            </div>
+          </div>
+    <div class="row">
+        <div class="span3">
+            <img src="assets/members/photo_aman_saxena.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px">
+            <p><center><h5><strong>Aman Saxena</strong></h5>
+            <p>
+              President
+            </p>
+            <a href="https://www.facebook.com/profile.php?id=100012306481673" class="fa fa-facebook"></a>
+            <a href="www.linkedin.com/in/aman2190" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/IMG-20181119-WA0021%20-%20Mohammad%20Aman.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Mohammad Aman</strong></h5>
+            <p>
+              Vice-President
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/sarita.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Sarita Aggarwal</strong></h5>
+            <p>
+              
+            </p>
+            <a href="https://www.facebook.com/sarita.agarwal.75457" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/srtagarwal15/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/IMG_20190102_141150%20-%20Meenal%20Ranta.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Meenal Ranta</strong></h5>
+            <p>
+              
+            </p>
+            <a href="https://www.facebook.com/profile.php?id=100015266343982" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/meenal-ranta-b018a316a/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/shyamsunder.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Shyam Sunder Sharma</strong></h5>
+            <p>
+              
+            </p>
+            <a href="https://www.facebook.com/shyamsunder.sharma.754570" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/shyam-sunder-sharma-11684a177/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/ps%20-%20Amit%20Anand.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Amit Anand</strong></h5>
+            <p>
+              
+            </p>
+            <a href="https://www.facebook.com/amya97" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/amit-anand-a4b067140/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+    </div>
+      <div class="span12" style="padding: 5px">
+            <div class="heading" style="font-family: Rubik">
+                <center><h1 style="text-decoration: underline; text-decoration-style: double; font-size: 47px; "><STRONG>CO-ORDINATORS</STRONG></h1>
+                
+                </center>
+            </div>
+          </div>
+    <div class="row">
+        <div class="span3">
+            <img src="assets/members/WhatsApp%20Image%202019-03-17%20at%2020.58.43.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px">
+            <p><center><h5><strong>Naveen Kumar</strong></h5>
+            <p>
+              Co-ordinator
+            </p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/WhatsApp%20Image%202019-03-16%20at%2023.33.06.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Arun Kumar Gupta</strong></h5>
+            <p>
+              Co-ordinator
+            </p>
+            <a href="https://www.facebook.com/profile.php?id=100007851408119" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/arun-kumar-gupta-41b891162/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/WhatsApp%20Image%202019-03-17%20at%2020.59.18.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Himanshu Gupta</strong></h5>
+            <p>
+              Co-ordinator
+            </p>
+            <a href="https://https://www.facebook.com/profile.php?id=100010658768830" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/IMG_20190316_221629.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Prabal Gupta</strong></h5>
+            <p>
+              Co-ordinator
+            </p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/IMG_20190105_234737_249.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Akash Gupta</strong></h5>
+            <p>
+             Co-ordinator 
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/IMG_20181005_214759%20-%20Utkarsh%20Tiwari.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Utkarsh Tiwari</strong></h5>
+            <p>
+              Co-ordinator
+            </p>
+            <a href="https://www.facebook.com/utkarsh.tiwari.94849410" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/utkarsh-tiwari-46a2a516b/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/IMG_20171110_020934%20-%20Raushan%20Kumar.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Raushan Kumar</strong></h5>
+            <p>
+            Co-ordinator
+            </p>
+            <a href="https://www.facebook.com/profile.php?id=100011139690733" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/spec%20-%20Ankit%20Thakur.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Ankit Thakur</strong></h5>
+            <p>
+              Co-ordinator
+            </p>
+            <a href="https://www.facebook.com/ankit.thakur379" class="fa fa-facebook"></a>
+            <a href="www.linkedin.com/in/ankitthakur01" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/20181224_221635%20-%20Jyoti%20Yadav.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Jyoti Yadav</strong></h5>
+            <p>
+              Co-ordinator
+            </p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/jyoti-yadav-427b19169/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/pranesh%20-%20Pranesh%20Gupta.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Pranesh Gupta</strong></h5>
+            <p>
+              Co-ordinator
+            </p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>    
+    </div>
+      <div class="span12" style="padding: 0px; max-width: 100%">
+            <div class="heading" style="font-family: Rubik; max-width: 100%">
+                <center><h1 style="text-decoration: underline; text-decoration-style: double; font-size: 37px; "><STRONG>EXECUTIVE MEMBERS</STRONG></h1>
+                
+                </center>
+            </div>
+          </div>
+    <div class="row">
+        <div class="span3">
+            <img src="assets/members/jitaksh.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px;">
+            <p><center><h5><strong>Jitaksh Kapoor</strong></h5>
+            <p>
+              Executive Member
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/pranjal.jpeg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Pranjal Joshi</strong></h5>
+            <p>
+              Executive Member
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/kashish.jpeg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Kashish Arora</strong></h5>
+            <p>
+              Executive Member
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/apurv.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Apurv</strong></h5>
+            <p>
+              Executive Member
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/aaryan.jpeg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Aaryan Gupta</strong></h5>
+            <p>
+             Executive Member
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/bhavya.png" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Bhavya Arora</strong></h5>
+            <p>
+              Executive Member
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/swarnima.jpeg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Swarnima Tiwari</strong></h5>
+            <p>
+              Executive Member
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/anjali.jpeg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Anjali Srivastava</strong></h5>
+            <p>
+             Executive Member
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/piyush.jpeg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Piyush Bhatia</strong></h5>
+            <p>
+              Executive Member
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/vibhu.jpg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Vibhu Vikrama</strong></h5>
+            <p>
+             Executive Member
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/shadab.jpeg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Shadab</strong></h5>
+            <p>
+             Executive Member
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+        <div class="span3">
+            <img src="assets/members/shailesh.jpeg" alt="" class="rounded-circle img-fluid" style="height: 300px; width: 300px"><p><center><h5><strong>Shailesh Khandpal</strong></h5>
+            <p>
+             Executive Member
+            </p>
+            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+            </center></p>
+        </div>
+      </div>
+  </div>
+</section>
+     <section class="section5" id="contact" style="margin: 10px; padding: 10px">
+        <div class="container-fluid" style="margin-top: 30px">
+        <div class="row" style="padding: 20px; min-width: 100%">
+            <div class="span12 heading1" style="font-family: Rubik">
+                <center>
+                <h1 style="text-decoration: underline; text-decoration-style: double; font-size: 40px; ">GET IN TOUCH</h1>                
+                </center>
+                <br>
+                <center>
+                <p style="font-family: Bahnschrift SemiLight SemiConde; font-size: 18px">
+                    Feel free to ask if you have any question regarding workshop and events or if you just want to say Hello, we would love to hear from you.
+                </p>
+                </center>
+            </div>
+          </div>
+        <div class="row" style="padding: 20px; min-width: 100%">
+           <div class="span6" style="width: 50%">
+                <p>
+                    <strong>Mr. Sumit Kumar</strong>
+                </p>
+                <p>
+                    Assistant Professor at IIIT Una & Faculty Coordinator
+                </p>
+                <p>
+                    <span><i class="fas fa-phone"></i><strong> Phone:</strong> +91-9798141114</span>
+                </p>
+          
+          
+                <p>
+                    <span><i class="fas fa-envelope"></i><strong> Email:</strong> sumitphd13@gmail.com </span>
+                </p>
+           </div> 
+            <div class="span6" style="width: 50%">
+                <p>
+                    <strong>Aman Saxena</strong>
+                </p>
+                <p>
+                    President
+                </p>
+                <p>
+                    <span><i class="fas fa-phone"></i><strong> Phone:</strong> +91-8894973403  </span>
+                </p>
+          
+          
+                <p>
+                    <span><i class="fas fa-envelope"></i><strong> Email:</strong> 16209@iiitu.ac.in</span>
+                </p>
+           </div> 
+            
+        </div>
+        <div class="row" style="padding: 20px; min-width: 100%">
+            <div class="span12 heading1" style="min-width: 100%">
+                <center>
+                <h4 style="font-size: 28px; font-family: Times New Roman; text-align: center"><i class="fas fa-users"></i><strong> Connect to our Social Profiles</strong></h4>                
+                </center>
+                <br>
+                <center>
+                <p>
+                    <a href="https://www.instagram.com/teamaavesh/" class="fa fa-instagram"></a>
+                    <a href="https://m.facebook.com/TeamAAVESH/?ref=bookmarks" class="fa fa-facebook"></a>
+                    <a href="https://www.linkedin.com/company/aavesh-iiitu/?originalSubdomain=in" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/Aavesh-IIITU" class="fa fa-github"></a>
+                </p>
+                </center>
+            </div>
+        </div>
+        </div>
+    </section>
+  <section class="footer">
+    <div class="container-fluid" style="margin-top: 30px; min-width: 100%; background-image: url(assets/kenny-luo-1179155-unsplash.jpg); background-attachment: fixed; background-size: contain; margin-bottom: 0px">
+        <div class="row" style="padding-top: 30px; margin-bottom: 0px">
+          <div class="span12" style="min-width: 100%; color: white; font-size: 16px">
+              <center>
+                <a class="brand" href="index.html"><img src="assets/bg/logo.png" alt="" height="100px"  width="140" /></a>
+                  <br>
+                  <br>
+                <p>
+                    &copy; Aavesh - All right reserved
+                    <br>
+                    Created by <a href="index.html">Electronic Society@IIIT Una</a>
+                </p>
+              </center>
+            </div>
+           
+          </div>
+      
+    </div>
+  </section>
+</body>

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>AAVESH</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./Style.css" />
+  <link rel="stylesheet" href="./mobile-style.css">
+    <style type="text/css">
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .header1 a {
+  font-family: var(--Sniglet-font);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.active a
+        {
+            background-color: blue;
+            border-radius: 5px;
+        }
+
+.header1 .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+.header1 .nav-item {
+  padding: 0.9em;
+}
+
+.header1 .navbar-brand {
+  padding-left: 8rem;
+}
+
+.header1 .nav-link:hover {
+  color: red;
+}
+
+.header1 .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+}
+
+.header1 .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+.header1 .row .col-md-5 img {
+  width: 90%;
+}
+
+
+.header1 .container .col-md-7 {
+  font-family: "Rubik", sans-serif;
+}
+
+.header1 .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+.header1 .container .col-md-7 h1 {
+  font-size: 8.5vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+.header1 .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+.primary-btn {
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+        .header1
+        {
+            height: 120vh;
+        }
+
+    
+        .video-background
+        {
+            position: absolute;
+            z-index: -1;
+            min-height: 100%;
+            min-width: 100%;
+            width: auto;
+            height: auto;
+            right: 0;
+            bottom: 0;
+            
+        }
+        .welcome-msg
+        {
+            position: relative;
+            text-align: center;
+            font-family: Rubik;
+            color: white;
+            top: 300px;
+        }
+        
+        @media (max-aspect-ratio: 16/9)
+        {
+            .video-background
+            {
+                width: auto;
+                height: 100%;
+            }
+        }
+        
+        .fa 
+        {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            font-size: 30px;
+            width: 50px;
+            height: 40px;
+            text-align: center;
+            text-decoration: none;
+            
+        }
+
+        .fa:hover 
+        {
+            opacity: 0.5;
+        }
+        .fa-linkedin 
+        {
+            background: #007bb5;
+            color: white;
+        }
+        .fa-facebook 
+        {
+            background: #3B5998;
+            color: white;
+        }
+        .fa-briefcase 
+        {
+            background: #a4c639;
+            color: white;
+        }
+        .fa-twitter 
+        {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-instagram 
+        {
+            background: #125688;
+            color: white;
+        }
+        .fa-github
+        {
+            background: black;
+            color: white;
+        }
+
+
+        .heading
+        {
+            color: white;
+            text-decoration-color: black;
+            letter-spacing: 3px;
+        }
+        .heading1
+        {
+            color: black;
+            letter-spacing: 3px;
+        }
+        .section4 {
+  max-width: 1000px;
+  margin: auto;
+}
+        
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+.span6
+        {
+            text-align: center;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+  <section class="header1" id="top">
+      <video autoplay loop class="video-background" muted plays-inline>
+        <source src="assets/Headerbackgrondoriginal.mp4" type="video/mp4">
+      </video>
+    <div class="container-fluid p-0" style="background-color: black">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.png" width="60px" height="45px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">HACKATRONICS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="dropdown">
+                <a href="#" class="nav-link">Our Team <i class="fas fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="Members.html">Members</a>
+                  <a href="achievements.html">Achievements</a>
+                  <a href="#">Blogs</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="welcome-msg" style="max-height: auto; max-width: 100%">
+    <h1 class="heading3" style="font-size: 5vw">Welcome to Electronics Society <strong>AAVESH</strong></h1>
+        <h3 class="heading4" style="font-size: 3vw">"Creating Ideas with Technology and Imagination"</h3>
+    </div>
+    </section>
+    <section class="section-1" id="aboutus" style="padding-top: 0; padding-bottom: 30px; padding-top: 0px; margin-top: 0">
+    <div class="container-fluid text-center" style="width: 80%; height: 100%; padding-bottom: 50px; padding-top: 0px ; margin-top: 0">
+        <div class="row" style="margin-top: 0px">
+          <div class="col-md-6 col-12" style="padding-top: 0px">
+            <div class="pray">
+              <img src="assets/AboutUs.jpg" width="2000px" height="600px">
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="panel text-left" style="padding-bottom: 20px; padding-top: 20px">
+                <center>
+                    <h1 style="text-decoration: underline ; text-decoration-style: double ; font-size: 40px">ABOUT US</h1>
+                </center>
+                
+              <p style="font-size: 20px">
+                
+                <strong>Aavesh</strong> is an electronics society that strives to teach and help students acquire new skills in an era of rapidly evolving technology in the field of electronics and communication engineering. The Society aims to provide potential minds of IIITU  a platform to discuss innovative ideas and nurture their skills to tackle real life challenges in the world today and contribute to the technical society through various projects, patents and research publications. We will be organizing various expert lectures, workshops, mentorship programs as well as competitions throughout the year to keep the students learning and providing them the necessary resources to implement their ideas. Activities of this club are published in the Current event section in every semester.
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-2" id="aboutus">
+      <div class="team row ">
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="assets/members/iiitudir.jpg" class="img-fluid border-radius p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Prof. S. Selvakumar</h3>
+                    <h5>Director IIIT Una</h5>
+                  <p class="card-text">
+                    
+                  </p>
+                  
+                    <a href="https://scholar.google.co.in/citations?hl=en&user=zF-NH_UAAAAJ&view_op=list_works" class="fa fa-briefcase"></a>
+                    <a href="https://www.linkedin.com/in/subramanian-selvakumar-00164a51/" class="fa fa-linkedin"></a>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <div class="card mr-2 d-inline-block shadow">
+                      <div class="card-img-top">
+                        <img src="assets/members/photo_aman_saxena.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">Aman Saxena</h3>
+                          <H5>President</H5>
+                        <p class="card-text">
+                            Explore Electronics, explode ideas ! Aavesh started its journey to nurture the interest in electronics and relevant arenas. Aavesh is for all those electronic fanatics who have the boldness to concede the challenges in the field of hardware, who have the capabilities to turn imagination to reality. We have faith that Aavesh will reach up to great heights .
+                        </p>
+                          <a href="https://www.facebook.com/profile.php?id=100012306481673" class="fa fa-facebook"></a>
+                          <a href="www.linkedin.com/in/aman2190" class="fa fa-linkedin"></a>
+                          <a href="https://twitter.com/aman_2190" class="fa fa-twitter"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card  d-inline-block mr-2 shadow">
+                      <div class="card-img-top">
+                        <img src="assets/members/IMG-20181119-WA0021%20-%20Mohammad%20Aman.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">Mohammad Aman</h3>
+                          <h5>Vice-President</h5>
+                        <p class="card-text">
+                          Electronics is not about Connections only, it's beyond Connections. AAVESH will amplify your attitude and rectify your faults. So come along and work together because in our world "1+1 = 1".
+                        </p>
+                            <a href="https://www.facebook.com/mohammad.aman.334" class="fa fa-facebook"></a>
+                            <a href="https://www.linkedin.com/in/mrzero0/" class="fa fa-linkedin"></a>
+                    
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        </div>
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="assets/members/mr_sumit.jpg" class="img-fluid border-radius p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Mr. Sumit Kumar</h3>
+                    <h5>Faculty Coordinator</h5>
+                  <p class="card-text">
+                    With the talent, dedication, and commitment of outstanding students, faculty,  
+	and staff of IIIT Una, it is inevitable that IIIT Una will scale new heights in the forthcoming years.
+                  </p>
+                  
+                    <a href="https://www.researchgate.net/profile/Sumit_Kumar196" class="fa fa-briefcase"></a>
+                    <a href="" class="fa fa-linkedin"></a>
+                  
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="services" class="section3" style="background-image: url(assets/aboutbg1.jpg); margin-top: 20px; background-attachment: fixed; background-size: contain">
+    <div class="container-fluid" style="margin-bottom: 20px">
+      
+        <div class="span12" style="padding: 20px">
+            <div class="heading" style="font-family: Rubik">
+                <center><h1 style="text-decoration: underline; text-decoration-style: double; font-size: 40px; ">CURRENT EVENTS</h1>
+                </center>
+            </div>
+          </div>
+      <div class="row" style="padding: 20px">
+        <div class="col-md-3 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-body">
+                  <h3 class="card-title">Workshops</h3>
+                    <img src="assets/workshop.jpg" class="img-fluid" alt="">
+                  <p class="card-text" style="color: black">
+                    Workshop done on <strong>Machine learning </strong> and <strong>Image Processing</strong> using Matlab
+                  </p>
+                  
+                  <a href="#" class="btn btn-primary">Download</a>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col-md-3 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg" >
+                <div class="card-body">
+                  <h3 class="card-title">Research</h3>
+                    <img src="assets/research1.jpg" style="height: 84px; width: 95px" class="img-fluid" alt="">
+                  <p class="card-text" style="color: black">
+                    
+                    To know more about Research section, Please click the button given below.
+                    <br>
+                  </p>
+                  <a href="#" class="btn btn-primary">Know More</a>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col-md-3 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Meraki</h3>
+                    <h6 style="color: grey">Technical Fest</h6>
+                    <img src="assets/techfest.jpg" style="height: 84px; width: 84px" class="img-fluid" alt="">
+                  <p style="color: black" class="card-text">
+                    This year IIIT Una is going to oragnise the technical fest MERAKI, Show your participation...
+                  </p>
+                  <a href="https://www.facebook.com/merakiIiituna/" class="btn btn-primary">Know More</a>
+                  
+                </div>
+              </div>
+        </div>
+      <div class="col-md-3 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Global Activities</h3>
+                    <img src="assets/global.jpg" class="img-fluid" alt="" style="height: 84px; width: 84px">
+                  <p style="color: black" class="card-text">
+                    Everyday a new invention happens in the world, So it's good to be updated...
+                  </p>
+                  <a href="#" class="btn btn-primary">Explore World</a>
+                  
+                </div>
+              </div>
+        </div>
+      </div>
+        </div>
+  </section>
+    <section class="section4" id="projects" style="margin-top: 30px; min-width: 80%" >
+        
+    <div class="container-fluid" style="margin-top: 30px">
+       <div class="row" style="padding: 20px; min-width: 100%">
+            <div class="span12 heading1" style="font-family: Rubik">
+                <center>
+                <h1 style="text-decoration: underline; text-decoration-style: double; font-size: 40px; ">RECENT PROJECTS</h1>
+                                
+                </center>
+                <br>
+                <center>
+                <p style="font-family: Bahnschrift SemiLight SemiConde; font-size: 20px">
+                    The best way to master a subject is by doing projects. Through a project you not only get a deeper understanding of the subject but also gain hands-on practical experience. If you are looking to do internships in college, the best way to catch the companies attention is through projects.
+                </p>
+                </center>
+            </div>
+          </div>
+        <div class=row style="padding-left: 40px; padding-right: 40px">
+            <div class=span12 id="myBtnContainer">
+             <button class="btn btn-primary active" onclick="filterSelection('all')">All Categories</button>
+             <button class="btn btn-primary" onclick="filterSelection('Hardware')">Hardware</button>
+             <button class="btn btn-primary" onclick="filterSelection('Software')">Software</button>
+             <button class="btn btn-primary" onclick="filterSelection('Iot')">Iot</button>
+            </div>
+        </div>
+        <div class="row" style="padding-left: 40px; padding-right: 40px">
+            <div class="column Hardware">
+                <div class="content">
+                    <img src="assets/portfolio/foodvending.jpg" class="img-fluid" alt="" style="width:100%">
+                    <h5>Food Vending Machine</h5>
+                    <a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Food-Vending-Machine" class="fa fa-github"></a>
+                </div>
+            </div>
+            <div class="column Hardware">
+                <div class="content">
+                    <img src="assets/portfolio/RCAircraft.jpg" class="img-fluid" alt="" style="width:100%">
+                    <h5>RC Aircraft</h5>
+                    <a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/RC-Aircraft" class="fa fa-github"></a>
+                </div>
+            </div>
+            <div class="column Hardware">
+                <div class="content">
+                    <img src="assets/portfolio/WavePlayer.jpg" alt="" class="img-fluid" style="width:100%">
+                    <h5>Wave Player</h5>
+                    <a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/AVR-16Bit-WAV-Player" class="fa fa-github"></a>
+                </div>
+            </div>
+  
+            <div class="column Software">
+                <div class="content">
+                    <img src="assets/portfolio/Numberplate.jpg" alt="" class="img-fluid" style="width:100%">
+                    <h5>Number plate Detection</h5>
+                    <a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/NumberPlate-Speed-detection" class="fa fa-github"></a>
+                </div>
+            </div>
+            <div class="column Software">
+                <div class="content">
+                    <img src="assets/portfolio/Gesture.jpg" alt="" class="img-fluid" style="width:100%">
+                    <h5>Cursor Movement by Hand Gesture</h5>
+                    <a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Cursor-Movement-Hand-Gesture" class="fa fa-github"></a>
+                </div>
+            </div>
+  
+            <div class="column Iot">
+                <div class="content">
+                    <img src="assets/portfolio/Fingerprint-Sensor-01%20(1).jpg" class="img-fluid" alt="" style="width:100%">
+                    <h5>Finger Print Voting System</h5>
+                    <a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Finger-print-BasedVoting" class="fa fa-github"></a>
+                </div>
+            </div>
+            <div class="column Iot">
+                <div class="content">
+                    <img src="assets/portfolio/plantbig.jpg" class="img-fluid" alt="" style="width:100%">
+                    <h5>Irrigation System</h5>
+                     <a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Automation-Irrigation-System" class="fa fa-github"></a>                   
+                </div>
+            </div>
+            <div class="column Iot">
+                <div class="content">
+                    <img src="assets/portfolio/iotbig.jpg" class="img-fluid"alt="" style="width:100%">
+                    <h5>Health Monitoring System</h5>
+                    <a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Health-Monitoring-System" class="fa fa-github"></a>
+                </div>
+            </div>
+        </div>  
+      </div>
+    </section>
+    <section class="section5" id="contact" style="margin: 40px; padding: 30px">
+        <div class="container-fluid" style="margin-top: 30px">
+        <div class="row" style="padding: 20px; min-width: 100%">
+            <div class="span12 heading1" style="font-family: Rubik">
+                <center>
+                <h1 style="text-decoration: underline; text-decoration-style: double; font-size: 40px; ">GET IN TOUCH</h1>                
+                </center>
+                <br>
+                <center>
+                <p style="font-family: Bahnschrift SemiLight SemiConde; font-size: 18px">
+                    Feel free to ask if you have any question regarding workshop and events or if you just want to say Hello, we would love to hear from you.
+                </p>
+                </center>
+            </div>
+          </div>
+        <div class="row" style="padding: 20px; min-width: 100%">
+           <div class="span6" style="width: 50%">
+                <p>
+                    <strong>Mr. Sumit Kumar</strong>
+                </p>
+                <p>
+                    Assistant Professor at IIIT Una & Faculty Coordinator
+                </p>
+                <p>
+                    <span><i class="fas fa-phone"></i><strong> Phone:</strong> +91-9798141114</span>
+                </p>
+          
+          
+                <p>
+                    <span><i class="fas fa-envelope"></i><strong> Email:</strong> sumitphd13@gmail.com </span>
+                </p>
+           </div> 
+            <div class="span6" style="width: 50%">
+                <p>
+                    <strong>Aman Saxena</strong>
+                </p>
+                <p>
+                    President
+                </p>
+                <p>
+                    <span><i class="fas fa-phone"></i><strong> Phone:</strong> +91-8894973403  </span>
+                </p>
+          
+          
+                <p>
+                    <span><i class="fas fa-envelope"></i><strong> Email:</strong> 16209@iiitu.ac.in</span>
+                </p>
+           </div> 
+            
+        </div>
+        <div class="row" style="padding: 20px; min-width: 100%">
+            <div class="span12 heading1" style="min-width: 100%">
+                <center>
+                <h4 style="font-size: 28px; font-family: Times New Roman; text-align: center"><i class="fas fa-users"></i><strong> Connect to our Social Profiles</strong></h4>                
+                </center>
+                <br>
+                <center>
+                <p>
+                    <a href="https://www.instagram.com/teamaavesh/" class="fa fa-instagram"></a>
+                    <a href="https://m.facebook.com/TeamAAVESH/?ref=bookmarks" class="fa fa-facebook"></a>
+                    <a href="https://www.linkedin.com/company/aavesh-iiitu/?originalSubdomain=in" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/Aavesh-IIITU" class="fa fa-github"></a>
+                </p>
+                </center>
+            </div>
+        </div>
+        </div>
+    </section>
+  <section class="footer">
+    <div class="container-fluid" style="margin-top: 30px; min-width: 100%; background-image: url(assets/kenny-luo-1179155-unsplash.jpg); background-attachment: fixed; background-size: contain; margin-bottom: 0px">
+        <div class="row" style="padding-top: 30px; margin-bottom: 0px">
+          <div class="span12" style="min-width: 100%; color: white; font-size: 16px">
+              <center>
+                <a class="brand" href="index.html"><img src="assets/bg/logo.png" alt="" height="100px"  width="140" /></a>
+                  <br>
+                  <br>
+                <p>
+                    &copy; Aavesh - All right reserved
+                    <br>
+                    Created by <a href="index.html">Electronic Society@IIIT Una</a>
+                </p>
+              </center>
+            </div>
+           
+          </div>
+      
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+    <script>
+    filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    </script>
+</body>
+
+</html>
