@@ -1,638 +1,1253 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Aavesh</title>
+		<link
+			rel="icon"
+			type="image/ico"
+			href="assets/img/Aavesh_brand_usage_#1_created_by_logaster.png"
+		/>
 
-<head>
-  <meta charset="utf-8">
-	<title>Aavesh </title>
-	 <link rel="icon" type="image/ico" href="assets/img/Aavesh_brand_usage_#1_created_by_logaster.png" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <!-- styles -->
-  <link href="assets/css/bootstrap.css" rel="stylesheet" />
-  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" />
-  <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
-  <link href="assets/css/animate.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Roboto+Condensed:400,300,700" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<!-- styles -->
+		<link href="assets/css/bootstrap.css" rel="stylesheet" />
+		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet" />
+		<link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+		<link href="assets/css/animate.css" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Roboto+Condensed:400,300,700"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+			rel="stylesheet"
+		/>
 
-  <link href="assets/css/style.css" rel="stylesheet" />
-  <link href="assets/color/default.css" rel="stylesheet" />
+		<link href="assets/css/style.css" rel="stylesheet" />
+		<link href="assets/color/default.css" rel="stylesheet" />
 
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
-  
-<style>
-	.director{
-		position: relative;
-		text-align: center;
-		bottom: 150px;
-	}	
-	
-	.blinking{
-		 animation-duration: 1000ms;
-		animation-name: blink;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
-		color:blueviolet;
-	}
- @keyframes blink
- {
-   from{opacity:1.0;}
-   to{opacity:0.3;}
- }
+		<link
+			rel="apple-touch-icon-precomposed"
+			sizes="144x144"
+			href="ico/apple-touch-icon-144-precomposed.png"
+		/>
+		<link
+			rel="apple-touch-icon-precomposed"
+			sizes="114x114"
+			href="ico/apple-touch-icon-114-precomposed.png"
+		/>
+		<link
+			rel="apple-touch-icon-precomposed"
+			sizes="72x72"
+			href="ico/apple-touch-icon-72-precomposed.png"
+		/>
+		<link
+			rel="apple-touch-icon-precomposed"
+			href="ico/apple-touch-icon-57-precomposed.png"
+		/>
 
-	</style>
- 
-</head>
+		<style>
+			.director {
+				position: relative;
+				text-align: center;
+				bottom: 150px;
+			}
 
-<body>
-  <header>
-    <!-- start top -->
-    <div id="topnav" class="navbar navbar-fixed-top default">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="logo">
-            <a href="index.html"><img src="assets/img/logo.png" alt="Aavesh"  height="46px"  width="66px"/></a>
-          </div>
-          <div class="navigation">
-         <nav>
-              <ul class="nav pull-right">
-                <li class="current"><a href="#intro"><i class="icon-home"></i> Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Events</a></li>
-                <li><a href="#works">Projects</a></li>
-				  <li><a href="#surge">SURGE</a></li>
-                <li><a href="#contact">Contact</a></li>
-				  
-                <li class="dropdown">
-                  <a href="#"> Our Team<i class="icon-angle-down"></i></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="members.html" class="external">Members</a></li>
-                    <li><a href="achievement.html" class="external">Achievements</a></li>
-                    <li><a href="blog.html" class="external">Blogs</a></li>
-					  
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-    <!-- end top -->
-  </header>
-  <!-- section intro -->
-  <section id="intro">
-    <div class="slogan">
-      
-     <br>
-     <br>
-     <br>
-    
-     
-      <h1 style="font-family: 'alex-brush'">Welcome to Electronics Society<span>Aavesh</span> </h1>
+			.blinking {
+				animation-duration: 1000ms;
+				animation-name: blink;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+				color: blueviolet;
+			}
+			@keyframes blink {
+				from {
+					opacity: 1;
+				}
+				to {
+					opacity: 0.3;
+				}
+			}
+		</style>
+	</head>
 
-      <h2  style="color: blanchedalmond" >Creating ideas with technology and imagination</h2>
+	<body>
+		<header>
+			<!-- start top -->
+			<div id="topnav" class="navbar navbar-fixed-top default">
+				<div class="navbar-inner">
+					<div class="container">
+						<div class="logo">
+							<a href="index.html"
+								><img
+									src="assets/img/logo.png"
+									alt="Aavesh"
+									height="46px"
+									width="66px"
+							/></a>
+						</div>
+						<div class="navigation">
+							<nav>
+								<ul class="nav pull-right">
+									<li class="current">
+										<a href="#intro"
+											><i class="icon-home"></i> Home</a
+										>
+									</li>
+									<li><a href="#techtatva">Techtatva</a></li>
+									<li><a href="#about">About</a></li>
+									<li><a href="#services">Events</a></li>
+									<li><a href="#works">Projects</a></li>
+									<li><a href="#surge">SURGE</a></li>
+									<li><a href="#contact">Contact</a></li>
 
-      
-      
+									<li class="dropdown">
+										<a href="#">
+											Our Team<i
+												class="icon-angle-down"
+											></i
+										></a>
+										<ul class="dropdown-menu">
+											<li>
+												<a
+													href="members.html"
+													class="external"
+													>Members</a
+												>
+											</li>
+											<li>
+												<a
+													href="achievement.html"
+													class="external"
+													>Achievements</a
+												>
+											</li>
+											<li>
+												<a
+													href="blog.html"
+													class="external"
+													>Blogs</a
+												>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--/.nav-collapse -->
+					</div>
+				</div>
+			</div>
+			<!-- end top -->
+		</header>
+		<!-- section intro -->
+		<section id="intro">
+			<div class="slogan">
+				<br />
+				<br />
+				<br />
 
-    </div>
-  </section>
-	
-	
-	
-	
-	
-  <!-- end intro -->
-  <!-- Section about -->
-	
-	
-  <section id="about" class="section">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="heading">
-            <h3><span>About us</span></h3>
-          </div>
-          <div class="sub-heading">
-            <p>
-		    <strong>Aavesh</strong> is an electronics society that strives to teach and help students acquire new skills in an era of rapidly evolving technology in the field of electronics and communication engineering. The Society aims to provide potential minds of IIITU  a platform to discuss innovative ideas and nurture their skills to tackle real life challenges in the world today and contribute to the technical society through various projects, patents and research publications. We will be organizing various expert lectures, workshops, mentorship programs as well as competitions throughout the year to keep the students learning and providing them the necessary resources to implement their ideas. Activities of this club are published in the Current event section in every semester.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span3">
-          <img src="assets/img/members/iiitudir.jpg" alt="" class="img-polaroid" />
-          <div class="roles">
-            <h5><strong>Prof. S. Selvakumar</strong></h5>
-            <p>
-              Director IIIT Una
-            </p>
-            <ul class="social-profile">
-      <li><a href="https://scholar.google.co.in/citations?hl=en&user=zF-NH_UAAAAJ&view_op=list_works"><i class="icon-briefcase icon-32 icon-circled"></i></a></li>
-             
-              <li><a href="https://www.linkedin.com/in/subramanian-selvakumar-00164a51/"><i class="icon-linkedin icon-32 icon-circled"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="span3">
-          <img src="assets/img/members/mr_sumit.jpg" alt="" class="img-polaroid"  />
-          <div class="roles">
-            <h5><strong>Mr. Sumit Kumar</strong></h5>
-            <p>
-             Faculty Coordinator
-		</p>
-            <ul class="social-profile">
-              <li><a href="https://www.researchgate.net/profile/Sumit_Kumar196"><i class="icon-briefcase icon-32 icon-circled"></i></a></li>
-              
-              <li><a href="#"><i class="icon-linkedin icon-32 icon-circled"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="span3">
-          <img src="assets/img/members/naveen.jpg" alt="Naveen Katiyar" class="img-polaroid" />
-          <div class="roles">
-            <h5><strong>Naveen Kumar</strong></h5>
-            <p>
-             President
-            </p>
-            <ul class="social-profile">
-              <li><a href="#"><i class="icon-facebook icon-32 icon-circled"></i></a></li>
-              
-              <li><a href="https://www.linkedin.com/in/naveen-pro"><i class="icon-linkedin icon-32 icon-circled"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="span3">
-          <img src="./assets/img/members/prabal.jpg" alt="Prabal Gupta"  class="img-polaroid" />
-          <div class="roles">
-            <h5><strong>Prabal Gupta</strong></h5>
-            <p>
-              Vice President
-            </p>
-            <ul class="social-profile">
-              <li><a href="https://www.facebook.com/prabal.gupta.142"><i class="icon-facebook icon-32 icon-circled"></i></a></li>
-             
-              <li><a href="https://www.linkedin.com/in/prabal-gupta-88aab5173"><i class="icon-linkedin icon-32 icon-circled"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end section about -->
-  <!-- section services -->
-  <section id="services" class="section parallax dark">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="heading">
-            <h3><span>Current Events</span></h3>
-          </div>
-          <div class="sub-heading">
-            <p>
-             
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span3">
-          <div class="box aligncenter">
-            <div class="halftop">
-              <h4><strong>Hacktronics 2020</strong></h4>
-              <img src="assets/img/Date_Venue.png" style="border-radious:50%;width:100px;height:100px" alt="Hacktronics"/>
-            </div>
-            <p>
-          Hacktronics 2020 will be organized by IIIT Una in collaboration with IEEE, IIT Mandi with the aim to reach out to as many innovators as possible and induce a great electronics and hardware spirit among the students.
-            </p>
-	<a href="assets/docs/participant_brochure.pdf"
-           <p class="blinking">
-             <strong>
-              Download Brochure
-            </strong>
-            </p></a>
-            <a href="https://aavesh-iiitu.tech/" class="btn btn-theme">Register Now</a>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="box aligncenter">
-            <div class="halftop">
-              <h4><strong>Research</strong></h4>
-              <img src="assets/img/research1.jpg"  style="border-radious:50%;width:100px;height:93px" >
-            </div>
-            <p>
-              To know more about Research section, Please click the button given below.
-              <br>
-              <br>
-              <br>
-            </p>
-            <a href="#" class="btn btn-theme">Know more</a>
-          </div>
-        </div>
-        <div class="span3" >
-          <div class="box aligncenter" style="height:340px">
-            <div class="halftop">
-              <h4><strong>Meraki</strong></h4>
-		    <h6>Technical Fest</h6>
-              <img src="techfest.jpg" style="border-radious:50%;width:100px;height:93px"   >
-            </div>
-            <p>
-              This year IIIT Una is going to oragnise the technical fest MERAKI, Show your participation...
-              <br>
-	      <br>
+				<h1 style="font-family: 'alex-brush'">
+					Welcome to Electronics Society<span>Aavesh</span>
+				</h1>
 
-              
-          
-            </p>
-            <a href="https://www.facebook.com/merakiIiituna/" class="btn btn-theme" >Know more</a>
+				<h2 style="color: blanchedalmond">
+					Creating ideas with technology and imagination
+				</h2>
+			</div>
+		</section>
 
-              <br>
-              <br>
-              
-            
+		<!-- end intro -->
+		<!-- start techtatva -->
+		<section></section>
+		<section
+			id="techtatva"
+			class="section parallax dark"
+			style="
+				background-image: url(./assets/img/techtatva_bg.jpg);
+				background-position: center;
+				background-blend-mode: darken;
+				background-color: rgba(0, 0, 0, 0.8);
+				background-attachment: fixed;
+			"
+		>
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="heading">
+							<h3><span>Current Event</span></h3>
+						</div>
+						<div class="sub-heading">
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span12">
+						<div class="aligncenter">
+							<div
+								class="box"
+								style="
+									background-image: linear-gradient(
+										to left bottom,
+										rgba(4, 17, 89, 0.15),
+										rgba(4, 17, 89, 0.85)
+									);
+									border: 10px solid transparent;
+									border-radius: 5px;
+								"
+							>
+								<div class="row" style="padding: 2rem 0">
+									<div class="span5">
+										<!-- <div class="halftop"> -->
+										<h4
+											style="
+												font-size: 2.25rem;
+												font-family: Audiowide,
+													sans-serif;
+											"
+										>
+											<strong>Techtatva 2022</strong>
+										</h4>
+										<img
+											src="assets/img/techtatva.png"
+											style="
+												border-radius: 50%;
+												width: 150px;
+												height: 150px;
+											"
+											alt="Techtatva"
+										/>
+										<!-- </div> -->
+									</div>
+									<div class="span6">
+										<p style="font-size: 1rem; color: #000">
+											Techtatva is the technical and
+											social event conducted by AAVESH,
+											IIIT Una. It marks days of absolute
+											ecstasy providing participants a
+											competing platform in technical,
+											non-technical and some fun events.
+										</p>
+										<p style="font-size: 1rem; color: #000">
+											It is an avenue to be comforted from
+											the routine life and to embrace the
+											fun. Planned as a ‘for the students,
+											of the students, by the students’
+											event, the festival is the most
+											awaited event of the year.
+										</p>
+										<a
+											href="assets/docs/techtatva_brochure.pdf"
+											class="btn btn-theme"
+										>
+											<!-- <p class="blinking"> -->
+											<!-- <strong> -->
+											Download Brochure
+											<!-- </strong> -->
+											<!-- </p> -->
+										</a>
+										<a
+											href="https://techtatva.herokuapp.com/"
+											class="btn btn-theme"
+										>
+											Participate Now
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Section techtatva -->
+		<!-- Section about -->
 
-          </div>
-        </div>
-        <div class="span3">
-          <div class="box aligncenter">
-            <div class="halftop">
-              <h4><strong>Global Activities</strong></h4>
-              <img src="global.jpg" style="border-radious:50%;width:100px;height:93px">
-            </div>
-            <p>
-              Everyday a new invention happens in the world, So it's good to be updated...
-              <br>
-              <br>
-              <br>
-            </p>
-            <a href="https://spectrum.ieee.org/" class="btn btn-theme">Explore world</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end section services -->
-  <!-- section works -->
-  <section id="works" class="section gray-bg">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="heading">
-            <h3><span>Recent Projects</span></h3>
-          </div>
-          <div class="sub-heading">
-            <p>
-              The best way to master a subject is by doing projects. Through a project you not only get a deeper understanding of the subject but also gain hands-on practical experience. If you are looking to do internships in college, the best way to catch the companies attention is through projects.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span12">
-          <ul class="filter">
-            <li class="all active"><a href="#" class="btn btn-theme">All categories</a></li>
-            <li class="hardware"><a href="#" class="btn btn-theme">Hardware</a></li>
-            <li class="software"><a href="#" class="btn btn-theme">Software</a></li>
-            <li class="iot"><a href="#" class="btn btn-theme">Iot</a></li>
-          </ul>
-          <div class="clear">
-          </div>
-          <div class="row">
-            <ul class="portfolio-area da-thumbs">
-              <li class="portfolio-item" data-id="id-0" data-type="iot">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img src="iot.jpg" alt="Portfolio name" title="" />
-			    <div class="bottom-left"><strong>Health Monitoring System</strong></div>
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5><strong>Health Monitoring System</strong></h5>
-                        <a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Health-Monitoring-System"><i class="icon-rounded icon-48 icon-github"></i></a>
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/iotbig.jpg">
-								<i class="icon-rounded icon-48 icon-zoom-in" id="f"></i>
-                </a></span>
-               <a href="assets/project/abstract for IoT based health monitoring system.pdf" target="_blank"><i class="icon-rounded icon-48 icon-plus-sign"></i></a>
-               <div class="div1">
+		<section id="about" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="heading">
+							<h3><span>About us</span></h3>
+						</div>
+						<div class="sub-heading">
+							<p>
+								<strong>Aavesh</strong> is an electronics
+								society that strives to teach and help students
+								acquire new skills in an era of rapidly evolving
+								technology in the field of electronics and
+								communication engineering. The Society aims to
+								provide potential minds of IIITU a platform to
+								discuss innovative ideas and nurture their
+								skills to tackle real life challenges in the
+								world today and contribute to the technical
+								society through various projects, patents and
+								research publications. We will be organizing
+								various expert lectures, workshops, mentorship
+								programs as well as competitions throughout the
+								year to keep the students learning and providing
+								them the necessary resources to implement their
+								ideas. Activities of this club are published in
+								the Current event section in every semester.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span3">
+						<img
+							src="assets/img/members/iiitudir.jpg"
+							alt=""
+							class="img-polaroid"
+						/>
+						<div class="roles">
+							<h5><strong>Prof. S. Selvakumar</strong></h5>
+							<p>Director IIIT Una</p>
+							<ul class="social-profile">
+								<li>
+									<a
+										href="https://scholar.google.co.in/citations?hl=en&user=zF-NH_UAAAAJ&view_op=list_works"
+										><i
+											class="icon-briefcase icon-32 icon-circled"
+										></i
+									></a>
+								</li>
 
+								<li>
+									<a
+										href="https://www.linkedin.com/in/subramanian-selvakumar-00164a51/"
+										><i
+											class="icon-linkedin icon-32 icon-circled"
+										></i
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="span3">
+						<img
+							src="assets/img/members/mr_sumit.jpg"
+							alt=""
+							class="img-polaroid"
+						/>
+						<div class="roles">
+							<h5><strong>Mr. Sumit Kumar</strong></h5>
+							<p>Faculty Coordinator</p>
+							<ul class="social-profile">
+								<li>
+									<a
+										href="https://www.researchgate.net/profile/Sumit_Kumar196"
+										><i
+											class="icon-briefcase icon-32 icon-circled"
+										></i
+									></a>
+								</li>
 
+								<li>
+									<a href="#"
+										><i
+											class="icon-linkedin icon-32 icon-circled"
+										></i
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="span3">
+						<img
+							src="assets/img/members/naveen.jpg"
+							alt="Naveen Katiyar"
+							class="img-polaroid"
+						/>
+						<div class="roles">
+							<h5><strong>Naveen Kumar</strong></h5>
+							<p>President</p>
+							<ul class="social-profile">
+								<li>
+									<a href="#"
+										><i
+											class="icon-facebook icon-32 icon-circled"
+										></i
+									></a>
+								</li>
 
+								<li>
+									<a
+										href="https://www.linkedin.com/in/naveen-pro"
+										><i
+											class="icon-linkedin icon-32 icon-circled"
+										></i
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="span3">
+						<img
+							src="./assets/img/members/prabal.jpg"
+							alt="Prabal Gupta"
+							class="img-polaroid"
+						/>
+						<div class="roles">
+							<h5><strong>Prabal Gupta</strong></h5>
+							<p>Vice President</p>
+							<ul class="social-profile">
+								<li>
+									<a
+										href="https://www.facebook.com/prabal.gupta.142"
+										><i
+											class="icon-facebook icon-32 icon-circled"
+										></i
+									></a>
+								</li>
 
+								<li>
+									<a
+										href="https://www.linkedin.com/in/prabal-gupta-88aab5173"
+										><i
+											class="icon-linkedin icon-32 icon-circled"
+										></i
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end section about -->
+		<!-- section services -->
+		<section id="services" class="section parallax dark">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="heading">
+							<h3><span>Current Events</span></h3>
+						</div>
+						<div class="sub-heading">
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span3">
+						<div class="box aligncenter">
+							<div class="halftop">
+								<h4><strong>Hacktronics 2020</strong></h4>
+								<img
+									src="assets/img/Date_Venue.png"
+									style="
+										border-radius: 50%;
+										width: 100px;
+										height: 100px;
+									"
+									alt="Hacktronics"
+								/>
+							</div>
+							<p>
+								Hacktronics 2020 will be organized by IIIT Una
+								in collaboration with IEEE, IIT Mandi with the
+								aim to reach out to as many innovators as
+								possible and induce a great electronics and
+								hardware spirit among the students.
+							</p>
+							<a href="assets/docs/participant_brochure.pdf">
+								<p class="blinking">
+									<strong> Download Brochure </strong>
+								</p></a
+							>
+							<a
+								href="https://aavesh-iiitu.tech/"
+								class="btn btn-theme"
+								>Register Now</a
+							>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="box aligncenter">
+							<div class="halftop">
+								<h4><strong>Research</strong></h4>
+								<img
+									src="assets/img/research1.jpg"
+									style="
+										border-radius: 50%;
+										width: 100px;
+										height: 93px;
+									"
+								/>
+							</div>
+							<p>
+								To know more about Research section, Please
+								click the button given below.
+								<br />
+								<br />
+								<br />
+							</p>
+							<a href="#" class="btn btn-theme">Know more</a>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="box aligncenter" style="height: 340px">
+							<div class="halftop">
+								<h4><strong>Meraki</strong></h4>
+								<h6>Technical Fest</h6>
+								<img
+									src="techfest.jpg"
+									style="
+										border-radius: 50%;
+										width: 100px;
+										height: 93px;
+									"
+								/>
+							</div>
+							<p>
+								This year IIIT Una is going to oragnise the
+								technical fest MERAKI, Show your
+								participation...
+								<br />
+								<br />
+							</p>
+							<a
+								href="https://www.facebook.com/merakiIiituna/"
+								class="btn btn-theme"
+								>Know more</a
+							>
 
-               </div>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="portfolio-item" data-id="id-0" data-type="hardware">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img src="food.jpg" alt="Portfolio name" title="" />
-			    <div class="bottom-left"><strong>Food vending Machine</strong></div>
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5><strong>Food vending Machine</strong></h5>
-	        	<a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Food-Vending-Machine"><i class="icon-rounded icon-48 icon-github"></i></a>
-                      
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/bigfood.jpg">
-								<i class="icon-rounded icon-48 icon-zoom-in"></i>
-                </a></span>
-                <a href="food.html" target="_blank"><i class="icon-rounded icon-48 icon-plus-sign"></i></a>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="portfolio-item" data-id="id-0" data-type="software">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img src="image.jpg" alt="Portfolio name" class="img-thumbnail" title="" />
-			    <div class="bottom-left"><strong>Number Plate Detection</strong></div>
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5><strong>Number Plate Detection</strong></h5>
-	      		<a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/NumberPlate-Speed-detection"><i class="icon-rounded icon-48 icon-github"></i></a>
-                        <a href="#"><i class=""></i></a>
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/imagebig.jpg">
-								<i class="icon-rounded icon-48 icon-zoom-in"></i>
-                </a></span>
-                <a href="number-plate.html" target="_blank"><i class="icon-rounded icon-48 icon-plus-sign"></i></a>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="portfolio-item" data-id="id-0" data-type="hardware">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img src="aircraft.jpg" alt="Portfolio name" title="" />
-			    <div class="bottom-left"><strong>RC Aircraft</strong></div>
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5><strong>RC Aircraft</strong></h5>
-	       		<a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/RC-Aircraft"><i class="icon-rounded icon-48 icon-github"></i></a>
-                     
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/airbig.jpg">
-								<i class="icon-rounded icon-48 icon-zoom-in"></i>
-                </a></span>
-                <a href="aircraft.html" target="_blank"><i class="icon-rounded icon-48 icon-plus-sign"></i></a>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="portfolio-item" data-id="id-0" data-type="hardware">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img src="mp3.jpg" alt="Portfolio name" title="" />
-			    <div class="bottom-left"><strong>WAVE PLAYER</strong></div>
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5><strong>WAVE PLAYER</strong></h5>
-	       		<a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/AVR-16Bit-WAV-Player"><i class="icon-rounded icon-48 icon-github"></i></a>
-                      
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/mp3big.jpg">
-								<i class="icon-rounded icon-48 icon-zoom-in"></i>
-                </a></span>
-                <a href="assets/project/AVR WAV player.pdf" target="_blank"><i class="icon-rounded icon-48 icon-plus-sign"></i></a>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="portfolio-item" data-id="id-0" data-type="iot">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img src="plant.jpg" alt="Portfolio name" title="" />
-			    <div class="bottom-left"><strong>Irrigation System</strong></div>
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5><strong>Irrigation System</strong></h5>
-                        <a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Automation-Irrigation-System"><i class=" icon-48 icon-rounded icon-github"></i></a>
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/plantbig.jpg">
-								<i class="icon-rounded icon-48 icon-zoom-in"></i>
-                </a></span>
-                <a href="assets/project/Automation Irrigation System.pdf" target="_blank"><i class="icon-rounded icon-48 icon-plus-sign"></i></a>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-	        <li class="portfolio-item" data-id="id-0" data-type="software">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img src="assets/img/portfolio/Gesture.jpg" alt="Portfolio name" title="" />
-			    <div class="bottom-left"><strong>Cursor Movement by Hand Gestures</strong></div>
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5><strong>Cursor Movement by Hand Gestures</strong></h5>
-	       		<a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Cursor-Movement-Hand-Gesture"><i class="icon-rounded icon-48 icon-github"></i></a>
-                      
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/Gesture.jpg">
-								<i class="icon-rounded icon-48 icon-zoom-in"></i>
-                </a></span>
-                <a href="mp3.html" target="_blank"><i class="icon-rounded icon-48 icon-plus-sign"></i></a>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-             
-				  <li class="portfolio-item" data-id="id-0" data-type="iot">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img src="assets/img/portfolio/Fingerprint-Sensor-01 (1).jpg" alt="Portfolio name" title="" />
-			    <div class="bottom-left"><strong>Finger Print Voting System</strong></div>
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <h5><strong>Finger Print Voting System</strong></h5>
-	       		<a href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Finger-print-BasedVoting"><i class="icon-rounded icon-48 icon-github"></i></a>
-                      
-                        <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/portfolio/Fingerprint-Sensor-01 (1).jpg">
-								<i class="icon-rounded icon-48 icon-zoom-in"></i>
-                </a></span>
-                <a href="assets/project/finger print documentation.pdf" target="_blank"><i class="icon-rounded icon-48 icon-plus-sign"></i></a>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </li>
-				
-				
-				
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- section works -->
-	
-	<section id="surge" class="section parallax dark">
-	<div class="container">
-	<div class="row">
-		  <div class="span12">
-          <div class="box aligncenter">
-            <div class="halftop">
-              <h4><strong>SURGE</strong></h4>
-              <img src="assets/img/images.png"   >
-            </div>
-            <p>
-              <strong>SURGE </strong> is a electronics club which is established by Electronic society Aavesh in 2019.
-            </p>
-            <a href="surge.html" target="_blank" class="btn btn-theme">Know more</a>
-          </div>
-        </div>
-		
-		
-		
-		</div>
-	
-	</div>
-	
-	
-	</section>
-	
-	
-	
-	
-  <!-- section contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="heading">
-            <h3><span>Get in touch</span></h3>
-          </div>
-          <div class="sub-heading">
-            <p>
-            Feel free to ask if you have any question regarding workshop and events or if you just want to say Hello, we would love to hear from you.
-          </p>
-          </div>
-        </div>
-      </div>
-    </div>
+							<br />
+							<br />
+						</div>
+					</div>
+					<div class="span3">
+						<div class="box aligncenter">
+							<div class="halftop">
+								<h4><strong>Global Activities</strong></h4>
+								<img
+									src="global.jpg"
+									style="
+										border-radius: 50%;
+										width: 100px;
+										height: 93px;
+									"
+								/>
+							</div>
+							<p>
+								Everyday a new invention happens in the world,
+								So it's good to be updated...
+								<br />
+								<br />
+								<br />
+							</p>
+							<a
+								href="https://spectrum.ieee.org/"
+								class="btn btn-theme"
+								>Explore world</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end section services -->
+		<!-- section works -->
+		<section id="works" class="section gray-bg">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="heading">
+							<h3><span>Recent Projects</span></h3>
+						</div>
+						<div class="sub-heading">
+							<p>
+								The best way to master a subject is by doing
+								projects. Through a project you not only get a
+								deeper understanding of the subject but also
+								gain hands-on practical experience. If you are
+								looking to do internships in college, the best
+								way to catch the companies attention is through
+								projects.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span12">
+						<ul class="filter">
+							<li class="all active">
+								<a href="#" class="btn btn-theme"
+									>All categories</a
+								>
+							</li>
+							<li class="hardware">
+								<a href="#" class="btn btn-theme">Hardware</a>
+							</li>
+							<li class="software">
+								<a href="#" class="btn btn-theme">Software</a>
+							</li>
+							<li class="iot">
+								<a href="#" class="btn btn-theme">Iot</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+						<div class="row">
+							<ul class="portfolio-area da-thumbs">
+								<li
+									class="portfolio-item"
+									data-id="id-0"
+									data-type="iot"
+								>
+									<div class="span3">
+										<div class="thumbnail">
+											<div class="image-wrapp">
+												<img
+													src="iot.jpg"
+													alt="Portfolio name"
+													title=""
+												/>
+												<div class="bottom-left">
+													<strong
+														>Health Monitoring
+														System</strong
+													>
+												</div>
+												<article
+													class="da-animate da-slideFromRight"
+													style="display: block"
+												>
+													<h5>
+														<strong
+															>Health Monitoring
+															System</strong
+														>
+													</h5>
+													<a
+														href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Health-Monitoring-System"
+														><i
+															class="icon-rounded icon-48 icon-github"
+														></i
+													></a>
+													<span
+														><a
+															class="zoom"
+															data-pretty="prettyPhoto"
+															href="assets/img/portfolio/iotbig.jpg"
+														>
+															<i
+																class="icon-rounded icon-48 icon-zoom-in"
+																id="f"
+															></i> </a
+													></span>
+													<a
+														href="assets/project/abstract for IoT based health monitoring system.pdf"
+														target="_blank"
+														><i
+															class="icon-rounded icon-48 icon-plus-sign"
+														></i
+													></a>
+													<div class="div1"></div>
+												</article>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li
+									class="portfolio-item"
+									data-id="id-0"
+									data-type="hardware"
+								>
+									<div class="span3">
+										<div class="thumbnail">
+											<div class="image-wrapp">
+												<img
+													src="food.jpg"
+													alt="Portfolio name"
+													title=""
+												/>
+												<div class="bottom-left">
+													<strong
+														>Food vending
+														Machine</strong
+													>
+												</div>
+												<article
+													class="da-animate da-slideFromRight"
+													style="display: block"
+												>
+													<h5>
+														<strong
+															>Food vending
+															Machine</strong
+														>
+													</h5>
+													<a
+														href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Food-Vending-Machine"
+														><i
+															class="icon-rounded icon-48 icon-github"
+														></i
+													></a>
 
-    <div class="container">
+													<span
+														><a
+															class="zoom"
+															data-pretty="prettyPhoto"
+															href="assets/img/portfolio/bigfood.jpg"
+														>
+															<i
+																class="icon-rounded icon-48 icon-zoom-in"
+															></i> </a
+													></span>
+													<a
+														href="food.html"
+														target="_blank"
+														><i
+															class="icon-rounded icon-48 icon-plus-sign"
+														></i
+													></a>
+												</article>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li
+									class="portfolio-item"
+									data-id="id-0"
+									data-type="software"
+								>
+									<div class="span3">
+										<div class="thumbnail">
+											<div class="image-wrapp">
+												<img
+													src="image.jpg"
+													alt="Portfolio name"
+													class="img-thumbnail"
+													title=""
+												/>
+												<div class="bottom-left">
+													<strong
+														>Number Plate
+														Detection</strong
+													>
+												</div>
+												<article
+													class="da-animate da-slideFromRight"
+													style="display: block"
+												>
+													<h5>
+														<strong
+															>Number Plate
+															Detection</strong
+														>
+													</h5>
+													<a
+														href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/NumberPlate-Speed-detection"
+														><i
+															class="icon-rounded icon-48 icon-github"
+														></i
+													></a>
+													<a href="#"
+														><i class=""></i
+													></a>
+													<span
+														><a
+															class="zoom"
+															data-pretty="prettyPhoto"
+															href="assets/img/portfolio/imagebig.jpg"
+														>
+															<i
+																class="icon-rounded icon-48 icon-zoom-in"
+															></i> </a
+													></span>
+													<a
+														href="number-plate.html"
+														target="_blank"
+														><i
+															class="icon-rounded icon-48 icon-plus-sign"
+														></i
+													></a>
+												</article>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li
+									class="portfolio-item"
+									data-id="id-0"
+									data-type="hardware"
+								>
+									<div class="span3">
+										<div class="thumbnail">
+											<div class="image-wrapp">
+												<img
+													src="aircraft.jpg"
+													alt="Portfolio name"
+													title=""
+												/>
+												<div class="bottom-left">
+													<strong>RC Aircraft</strong>
+												</div>
+												<article
+													class="da-animate da-slideFromRight"
+													style="display: block"
+												>
+													<h5>
+														<strong
+															>RC Aircraft</strong
+														>
+													</h5>
+													<a
+														href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/RC-Aircraft"
+														><i
+															class="icon-rounded icon-48 icon-github"
+														></i
+													></a>
 
-      <div class="row">
-       <div class="dotted_line">
-          </div>
-		  <div class="span6">
-		  
-		    <p>
-            <strong>Mr. Sumit Kumar</strong>
-          </p>
-          <p>
-           Assistant Professor at IIIT Una & Faculty Coordinator
-          </p>
-          <p>
-            <span><i class="icon-phone"></i><strong>Phone:</strong> +91-9798141114</span>
-          </p>
-          
-          
-          <p>
-            <span><i class="icon-envelope-alt"></i><strong>Email:</strong>sumitphd13@gmail.com </span>
-          </p>
-       
-		  
-		  </div>
-        <div class="span6">
-         
-         
-          
-          <p>
-            <strong>Naveen Katiyar</strong>
-          </p>
-          <p>
-            President (Electronics Association Aavesh)
-          </p>
-          <p>
-            <span><i class="icon-phone"></i><strong>Phone:</strong>+91-8934871006</span>
-          </p>
-          
-          <p>
-            <span><i class="icon-envelope-alt"></i><strong>Email:</strong>17246@iiitu.ac.in</span>
-          </p>
-       
-          
-          </div>
-        
-		  
-			<div class="span12">
-				  <div class="dotted_line">
-          </div>
-		  <h4 align="center"><i class="icon-group"></i><strong>Connect to our social profiles</strong></h4>
-          <div class="social-links" align="center">
-            <ul class="social-links">
-              
-              <li><a href="https://www.facebook.com/TeamAAVESH/" title="Facebook"><i class="icon-square icon-32 icon-facebook"></i></a></li>
-              
-              <li><a href="#" title="Linkedin"><i class="icon-square icon-32 icon-linkedin"></i></a></li>
-              <li><a href="https://github.com/Aavesh-IIITU" title="Github"><i class="icon-square icon-32 icon-github"></i></a></li>
-            </ul>
-          </div>
-		  
-		  
-		  
-		  </div>
-		 
-      </div>
-    </div>
-  </section>
-  <!-- end section contact -->
+													<span
+														><a
+															class="zoom"
+															data-pretty="prettyPhoto"
+															href="assets/img/portfolio/airbig.jpg"
+														>
+															<i
+																class="icon-rounded icon-48 icon-zoom-in"
+															></i> </a
+													></span>
+													<a
+														href="aircraft.html"
+														target="_blank"
+														><i
+															class="icon-rounded icon-48 icon-plus-sign"
+														></i
+													></a>
+												</article>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li
+									class="portfolio-item"
+									data-id="id-0"
+									data-type="hardware"
+								>
+									<div class="span3">
+										<div class="thumbnail">
+											<div class="image-wrapp">
+												<img
+													src="mp3.jpg"
+													alt="Portfolio name"
+													title=""
+												/>
+												<div class="bottom-left">
+													<strong>WAVE PLAYER</strong>
+												</div>
+												<article
+													class="da-animate da-slideFromRight"
+													style="display: block"
+												>
+													<h5>
+														<strong
+															>WAVE PLAYER</strong
+														>
+													</h5>
+													<a
+														href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/AVR-16Bit-WAV-Player"
+														><i
+															class="icon-rounded icon-48 icon-github"
+														></i
+													></a>
 
-  <footer>
-    <div class="verybottom">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <div class="aligncenter">
-              <div class="logo">
-                <a class="brand" href="index.html"><img src="assets/img/footer.png" alt="" height="100px"  width="140" /></a>
-              </div>
-              <p>
-                &copy; Aavesh - All right reserved
-              </p>
-              <div class="credits">
-              
-                Created by <a href="index.html">Electronic Society@IIIT Una</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+													<span
+														><a
+															class="zoom"
+															data-pretty="prettyPhoto"
+															href="assets/img/portfolio/mp3big.jpg"
+														>
+															<i
+																class="icon-rounded icon-48 icon-zoom-in"
+															></i> </a
+													></span>
+													<a
+														href="assets/project/AVR WAV player.pdf"
+														target="_blank"
+														><i
+															class="icon-rounded icon-48 icon-plus-sign"
+														></i
+													></a>
+												</article>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li
+									class="portfolio-item"
+									data-id="id-0"
+									data-type="iot"
+								>
+									<div class="span3">
+										<div class="thumbnail">
+											<div class="image-wrapp">
+												<img
+													src="plant.jpg"
+													alt="Portfolio name"
+													title=""
+												/>
+												<div class="bottom-left">
+													<strong
+														>Irrigation
+														System</strong
+													>
+												</div>
+												<article
+													class="da-animate da-slideFromRight"
+													style="display: block"
+												>
+													<h5>
+														<strong
+															>Irrigation
+															System</strong
+														>
+													</h5>
+													<a
+														href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Automation-Irrigation-System"
+														><i
+															class="icon-48 icon-rounded icon-github"
+														></i
+													></a>
+													<span
+														><a
+															class="zoom"
+															data-pretty="prettyPhoto"
+															href="assets/img/portfolio/plantbig.jpg"
+														>
+															<i
+																class="icon-rounded icon-48 icon-zoom-in"
+															></i> </a
+													></span>
+													<a
+														href="assets/project/Automation Irrigation System.pdf"
+														target="_blank"
+														><i
+															class="icon-rounded icon-48 icon-plus-sign"
+														></i
+													></a>
+												</article>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li
+									class="portfolio-item"
+									data-id="id-0"
+									data-type="software"
+								>
+									<div class="span3">
+										<div class="thumbnail">
+											<div class="image-wrapp">
+												<img
+													src="assets/img/portfolio/Gesture.jpg"
+													alt="Portfolio name"
+													title=""
+												/>
+												<div class="bottom-left">
+													<strong
+														>Cursor Movement by Hand
+														Gestures</strong
+													>
+												</div>
+												<article
+													class="da-animate da-slideFromRight"
+													style="display: block"
+												>
+													<h5>
+														<strong
+															>Cursor Movement by
+															Hand
+															Gestures</strong
+														>
+													</h5>
+													<a
+														href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Cursor-Movement-Hand-Gesture"
+														><i
+															class="icon-rounded icon-48 icon-github"
+														></i
+													></a>
 
-  <!-- Javascript Library Files -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.easing.js"></script>
-  <script src="assets/js/bootstrap.js"></script>
-  <script src="assets/js/parallax/jquery.parallax-1.1.3.js"></script>
-  <script src="assets/js/nagging-menu.js"></script>
-  <script src="assets/js/jquery.nav.js"></script>
-  <script src="assets/js/prettyPhoto/jquery.prettyPhoto.js"></script>
-  <script src="assets/js/portfolio/jquery.quicksand.js"></script>
-  <script src="assets/js/portfolio/setting.js"></script>
-  <script src="assets/js/hover/jquery-hover-effect.js"></script>
-  <script src="assets/js/jquery.scrollTo.min.js"></script>
-  <script src="assets/js/animate.js"></script>
+													<span
+														><a
+															class="zoom"
+															data-pretty="prettyPhoto"
+															href="assets/img/portfolio/Gesture.jpg"
+														>
+															<i
+																class="icon-rounded icon-48 icon-zoom-in"
+															></i> </a
+													></span>
+													<a
+														href="mp3.html"
+														target="_blank"
+														><i
+															class="icon-rounded icon-48 icon-plus-sign"
+														></i
+													></a>
+												</article>
+											</div>
+										</div>
+									</div>
+								</li>
 
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+								<li
+									class="portfolio-item"
+									data-id="id-0"
+									data-type="iot"
+								>
+									<div class="span3">
+										<div class="thumbnail">
+											<div class="image-wrapp">
+												<img
+													src="assets/img/portfolio/Fingerprint-Sensor-01 (1).jpg"
+													alt="Portfolio name"
+													title=""
+												/>
+												<div class="bottom-left">
+													<strong
+														>Finger Print Voting
+														System</strong
+													>
+												</div>
+												<article
+													class="da-animate da-slideFromRight"
+													style="display: block"
+												>
+													<h5>
+														<strong
+															>Finger Print Voting
+															System</strong
+														>
+													</h5>
+													<a
+														href="https://github.com/Aavesh-IIITU/Projects-Fest-2019/tree/master/Finger-print-BasedVoting"
+														><i
+															class="icon-rounded icon-48 icon-github"
+														></i
+													></a>
 
-  <!-- Template Custom Javascript File -->
-  <script src="assets/js/custom.js"></script>
+													<span
+														><a
+															class="zoom"
+															data-pretty="prettyPhoto"
+															href="assets/img/portfolio/Fingerprint-Sensor-01 (1).jpg"
+														>
+															<i
+																class="icon-rounded icon-48 icon-zoom-in"
+															></i> </a
+													></span>
+													<a
+														href="assets/project/finger print documentation.pdf"
+														target="_blank"
+														><i
+															class="icon-rounded icon-48 icon-plus-sign"
+														></i
+													></a>
+												</article>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- section works -->
 
-</body>
+		<section id="surge" class="section parallax dark">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="box aligncenter">
+							<div class="halftop">
+								<h4><strong>SURGE</strong></h4>
+								<img src="assets/img/images.png" />
+							</div>
+							<p>
+								<strong>SURGE </strong> is a electronics club
+								which is established by Electronic society
+								Aavesh in 2019.
+							</p>
+							<a
+								href="surge.html"
+								target="_blank"
+								class="btn btn-theme"
+								>Know more</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<!-- section contact -->
+		<section id="contact" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="heading">
+							<h3><span>Get in touch</span></h3>
+						</div>
+						<div class="sub-heading">
+							<p>
+								Feel free to ask if you have any question
+								regarding workshop and events or if you just
+								want to say Hello, we would love to hear from
+								you.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="dotted_line"></div>
+					<div class="span6">
+						<p>
+							<strong>Mr. Sumit Kumar</strong>
+						</p>
+						<p>
+							Assistant Professor at IIIT Una & Faculty
+							Coordinator
+						</p>
+						<p>
+							<span
+								><i class="icon-phone"></i
+								><strong>Phone:</strong> +91-9798141114</span
+							>
+						</p>
+
+						<p>
+							<span
+								><i class="icon-envelope-alt"></i
+								><strong>Email:</strong>sumitphd13@gmail.com
+							</span>
+						</p>
+					</div>
+					<div class="span6">
+						<p>
+							<strong>Naveen Katiyar</strong>
+						</p>
+						<p>President (Electronics Association Aavesh)</p>
+						<p>
+							<span
+								><i class="icon-phone"></i
+								><strong>Phone:</strong>+91-8934871006</span
+							>
+						</p>
+
+						<p>
+							<span
+								><i class="icon-envelope-alt"></i
+								><strong>Email:</strong>17246@iiitu.ac.in</span
+							>
+						</p>
+					</div>
+
+					<div class="span12">
+						<div class="dotted_line"></div>
+						<h4 align="center">
+							<i class="icon-group"></i
+							><strong>Connect to our social profiles</strong>
+						</h4>
+						<div class="social-links" align="center">
+							<ul class="social-links">
+								<li>
+									<a
+										href="https://www.facebook.com/TeamAAVESH/"
+										title="Facebook"
+										><i
+											class="icon-square icon-32 icon-facebook"
+										></i
+									></a>
+								</li>
+
+								<li>
+									<a href="#" title="Linkedin"
+										><i
+											class="icon-square icon-32 icon-linkedin"
+										></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://github.com/Aavesh-IIITU"
+										title="Github"
+										><i
+											class="icon-square icon-32 icon-github"
+										></i
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end section contact -->
+
+		<footer>
+			<div class="verybottom">
+				<div class="container">
+					<div class="row">
+						<div class="span12">
+							<div class="aligncenter">
+								<div class="logo">
+									<a class="brand" href="index.html"
+										><img
+											src="assets/img/footer.png"
+											alt=""
+											height="100px"
+											width="140"
+									/></a>
+								</div>
+								<p>&copy; Aavesh - All right reserved</p>
+								<div class="credits">
+									Created by
+									<a href="index.html"
+										>Electronic Society@IIIT Una</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<a href="#" class="scrollup">
+			<i class="icon-chevron-up icon-square icon-48 active"></i>
+		</a>
+
+		<!-- Javascript Library Files -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.easing.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+		<script src="assets/js/parallax/jquery.parallax-1.1.3.js"></script>
+		<script src="assets/js/nagging-menu.js"></script>
+		<script src="assets/js/jquery.nav.js"></script>
+		<script src="assets/js/prettyPhoto/jquery.prettyPhoto.js"></script>
+		<script src="assets/js/portfolio/jquery.quicksand.js"></script>
+		<script src="assets/js/portfolio/setting.js"></script>
+		<script src="assets/js/hover/jquery-hover-effect.js"></script>
+		<script src="assets/js/jquery.scrollTo.min.js"></script>
+		<script src="assets/js/animate.js"></script>
+
+		<!-- Contact Form JavaScript File -->
+		<script src="contactform/contactform.js"></script>
+
+		<!-- Template Custom Javascript File -->
+		<script src="assets/js/custom.js"></script>
+	</body>
 </html>
